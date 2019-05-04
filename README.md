@@ -5,7 +5,7 @@ Time series prewhitening on web enabled devices.
 
 `webwhiten.js` is a time series prewhitening based around a Burg estimation of the the autoregressive model. This can be used for time series prewhitening, and was designed in mind for use with cross-correlation. It uses a combination of WebAssembly & WebAudio to implement the procedure.
 
-Credit goes to [ar](https://github.com/RhysU/ar) for the easily accessible autoregressive utility functions in C++ header files.
+Credit goes to [ar](https://github.com/RhysU/ar) for the easily accessible autoregressive utility functions in C++ header files, as well as [wasm-arrays](https://github.com/DanRuta/wasm-arrays) for WebAssembly array manipulation. 
 
 # Getting Started
 
