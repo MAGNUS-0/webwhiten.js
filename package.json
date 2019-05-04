@@ -1,0 +1,18 @@
+{
+  "name": "webwhiten",
+  "version": "1.0.0",
+  "description": "Time series prewhitening on web enabled devices.",
+  "main": "prewhiten.js",
+  "scripts": {
+    "build": "cp build/prewhiten.js dist/prewhiten.js && cp build/prewhiten.wasm dist/prewhiten.wasm && cp src/wasm-arrays.js dist/wasm-arrays.js && cp src/webwhiten.js dist/webwhiten.js",
+    "build:wasm": "emcc -s WASM=1 -s NO_EXIT_RUNTIME=1 -s ALLOW_MEMORY_GROWTH=1 -s EXPORTED_FUNCTIONS=\"['_malloc']\" -s EXTRA_EXPORTED_RUNTIME_METHODS=\"['ccall','cwrap']\"  -o build/prewhiten.js src/prewhiten.cpp -std=c++11"
+  },
+  "author": "Magnus Woodgate",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.1"
+  }
+}
