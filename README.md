@@ -52,10 +52,6 @@ Both of which will return an object formatted as so:
 
 ```
 
-# Developing
-
-**Coming Soon!**
-
 # Author
 
 Magnus Woodgate
